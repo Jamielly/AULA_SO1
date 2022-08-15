@@ -1,7 +1,9 @@
 package view;
 
 public class principal {
-	import controller.OperacoesController();
+	
+	Import controllerOperacoesController();
+	
 	public class Principal {
 
 		public static void main(String[] args) {
@@ -10,5 +12,5 @@ public class principal {
 	op.concatenaString();
 	op.concatenaBuffer();
 		}
-
 	}
+}
