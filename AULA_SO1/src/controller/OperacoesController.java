@@ -5,6 +5,7 @@ public class OperacoesController {
 	//concatena de 100000 posições 
 	
     public void concatenaString() {
+	    int[] vet = new int[100000];
 	String cadeia = " ";
 	double tempoInicial = System.nanoTime();
 	for (int i = 0; i < 100000; i++) {
@@ -14,7 +15,7 @@ public class OperacoesController {
 		double tempoTotal = tempoFinal - tempoInicial;
 		// tempo total nS - 10^-9S
 		 tempoTotal = tempoTotal / Math.pow(10, 9);
-		 System.out.println("String 1000 ==>"+tempoTotal+"S ");
+		 System.out.println("String 100000 ==>"+tempoTotal+"S ");
     }
 //concatena de 100000 posicoes e mbuffer de strings
 		 public void concatenaBuffer() {
@@ -27,7 +28,7 @@ public class OperacoesController {
 			 double tempoTotal = tempoFinal - tempoInicial;
 			 // tempo total nS - 10^-9S
 			 tempoTotal = tempoTotal / Math.pow (10, 9);
-			 System.out.println("Buffer 1000 ==>"+tempoTotal+"S ");
+			 System.out.println("Buffer 100000 ==>"+tempoTotal+"S ");
 		 }
 }
 
